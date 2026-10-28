@@ -24,7 +24,7 @@ button{font:inherit;color:inherit}
   text-align:center;padding:2rem 1.2rem;transition:opacity .9s,transform .9s,filter .9s}
 .page.leaving{opacity:0;transform:scale(1.06);filter:blur(8px)}
 .whisper{font-style:italic;color:var(--lav);opacity:.8;letter-spacing:.1em}
-.name{font-family:var(--script);font-weight:400;font-size:clamp(4.5rem,18vw,9rem);line-height:1.05;
+.name{font-family:var(--script);font-weight:400;font-size:clamp(4.5rem,18vw,9rem);line-height:1.2;padding:.05em .3em .3em;
   background:linear-gradient(180deg,#fff,var(--lav) 55%,var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent;
   filter:drop-shadow(0 0 18px rgba(205,180,255,.55));animation:breathe 6s ease-in-out infinite}
 @keyframes breathe{50%{filter:drop-shadow(0 0 30px rgba(255,179,217,.7))}}
@@ -32,7 +32,7 @@ button{font:inherit;color:inherit}
 .clock{display:flex;gap:clamp(.5rem,2.5vw,1.4rem);flex-wrap:wrap;justify-content:center}
 .unit{width:clamp(68px,20vw,112px);padding:.9rem .3rem .7rem;border-radius:18px;
   background:rgba(109,63,192,.18);border:1px solid rgba(205,180,255,.35);box-shadow:0 0 24px rgba(155,110,255,.25) inset,0 0 20px rgba(155,110,255,.15)}
-.unit b{display:block;font-size:clamp(2rem,8vw,3.4rem);font-weight:600;line-height:1.1;font-variant-numeric:tabular-nums;color:#fff;text-shadow:0 0 14px rgba(205,180,255,.8)}
+.unit b{display:block;font-size:clamp(2rem,8vw,3.4rem);font-weight:600;line-height:1.1;font-variant-numeric:lining-nums tabular-nums;color:#fff;text-shadow:0 0 14px rgba(205,180,255,.8)}
 .unit span{font-size:.95rem;color:var(--lav);font-style:italic}
 .clock.done{opacity:.55}
 .hint{margin-top:2rem;max-width:30ch;color:var(--lav);font-style:italic}
