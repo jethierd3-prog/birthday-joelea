@@ -3,7 +3,7 @@
    Format: "YYYY-MM-DDTHH:MM:SS+08:00"
    +08:00 = Philippine Time. Change it if her timezone differs.
    ============================================================ */
-const BIRTHDAY_TARGET = "2026-12-25T00:00:00+08:00";   // <-- placeholder, set the real date!
+   const BIRTHDAY_TARGET = "2026-11-21T00:00:00+08:00";   // <-- placeholder, set the real date!
 
 /* ✏️ Messages revealed when she touches a flower (edit freely) */
 const TULIP_MESSAGES = [
