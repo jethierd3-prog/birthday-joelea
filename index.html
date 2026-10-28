@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joelea's Birthday Garden 💜</title>
+<meta name="theme-color" content="#1a0b2e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sky" id="sky" aria-hidden="true"></div>
+
+<!-- PAGE 1: countdown only -->
+<section class="page" id="countdown-page">
+  <p class="whisper">for</p>
+  <h1 class="name">Joelea</h1>
+  <h2 class="lead">Something Special Is Waiting for You...</h2>
+  <div class="clock" id="clock" role="timer" aria-live="off">
+    <div class="unit"><b id="d">00</b><span>days</span></div>
+    <div class="unit"><b id="h">00</b><span>hours</span></div>
+    <div class="unit"><b id="m">00</b><span>minutes</span></div>
+    <div class="unit"><b id="s">00</b><span>seconds</span></div>
+  </div>
+  <p class="hint" id="hint">A little gift is wrapped and waiting. It opens the moment this reaches zero.</p>
+  <button class="unlock" id="unlock" type="button" hidden>Your Surprise Is Ready, Joelea 💜</button>
+</section>
+
+<!-- PAGE 2: injected by script.js only after the countdown ends -->
+<main id="garden-page" hidden></main>
+
+<template id="garden-tpl">
+  <nav class="nav" aria-label="Sections">
+    <a href="#letter">Letter</a><a href="#verses">Verses</a><a href="#tulips">Tulips</a><a href="#lilies">Lilies</a><a href="#ending">With love</a>
+  </nav>
+
+  <section class="sec" id="letter">
+    <h2 class="script">A little note for your birthday</h2>
+    <p class="tap">Tap the envelope to open it</p>
+    <button class="envelope" id="envelope" type="button" aria-expanded="false" aria-controls="paper">
+      <span class="env-back"></span><span class="peek"></span><span class="env-front"></span><span class="flap"></span><span class="seal">💜</span>
+    </button>
+    <div class="paper-wrap" id="paper"><div class="paper-clip"><article class="paper">
+      <p>Happy birthday, Joelea! I hope this new year of your life brings you peace, joy, good health, and many reasons to smile.</p>
+      <p>May you keep growing into the person God created you to be. Even on ordinary days, I hope you remember that your life has value, your kindness matters, and you are appreciated more than you know.</p>
+      <p>May God guide your steps, strengthen your faith, and fill your days with people and moments that bring you closer to Him. Keep shining in your own gentle way.</p>
+      <p>Thank you for being you. I pray that this birthday is the beginning of a year filled with meaningful memories, answered prayers, and beautiful new beginnings.</p>
+      <p class="sign">With warm wishes,<br>With love and prayers</p>
+    </article></div></div>
+  </section>
+
+  <section class="sec" id="verses">
+    <h2 class="script">Words to hold close</h2>
+    <div class="verses">
+      <figure class="verse"><blockquote>I praise you because I am fearfully and wonderfully made; your works are wonderful, I know that full well.</blockquote><figcaption>Psalm 139:14</figcaption></figure>
+      <figure class="verse"><blockquote>May he give you the desire of your heart and make all your plans succeed.</blockquote><figcaption>Psalm 20:4</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="sec" id="tulips">
+    <h2 class="script">The Tulip Garden</h2>
+    <p class="tap">Touch a tulip to see what it holds</p>
+    <div class="garden" id="tulip-row"></div>
+    <p class="bloom-msg" id="tulip-msg" aria-live="polite">&nbsp;</p>
+  </section>
+
+  <section class="sec lily-sec" id="lilies">
+    <h2 class="script">The Lily Meadow</h2>
+    <p class="tap">Each lily has a message for you</p>
+    <div class="garden lilies" id="lily-row"></div>
+    <p class="bloom-msg" id="lily-msg" aria-live="polite">&nbsp;</p>
+  </section>
+
+  <section class="sec ending" id="ending">
+    <div class="floaters" id="floaters" aria-hidden="true"></div>
+    <h2 class="script big">Happy Birthday, Joelea 💜</h2>
+    <p class="closing">Thank you for being you.</p>
+    <p class="closing">Keep shining in your own gentle way.</p>
+    <p class="closing soft">With love and prayers</p>
+  </section>
+</template>
+
+<script src="script.js"></script>
+</body>
+</html>
