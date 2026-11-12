@@ -17,9 +17,9 @@ const TULIP_MESSAGES = [
 ];
 const LILY_MESSAGES = [
   "Thank you for being you.",
-  "May your days be filled with people and moments that bring you closer to Him.",
+  "I see the galaxies when I look in your eyes.",
   "You are loved, Joelea. 💜",
-  "A whole year of reasons to smile is waiting for you.",
+  "You're the prettiest thing I've ever seen.",
   "This birthday is the beginning of something beautiful."
 ];
 
